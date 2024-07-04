@@ -26,7 +26,7 @@ Credits
 
 
 Contacts
---------
+------- -
 * Mail Contact : odoo@cybrosys.com
 * Website : https://cybrosys.com
 
