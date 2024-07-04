@@ -15,7 +15,7 @@ Company
 * `Cybrosys Techno Solutions <https://cybrosys.com/>`__
 
 License
--------
+---- ---
 General Public License, Version 3 (AGPL v3).
 (https://www.odoo.com/documentation/user/16.0/legal/licenses/licenses.html)
 
