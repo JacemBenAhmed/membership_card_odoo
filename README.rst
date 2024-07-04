@@ -11,7 +11,7 @@ Configuration
 * No additional configurations needed
 
 Company
------- -
+-------
 * `Cybrosys Techno Solutions <https://cybrosys.com/>`__
 
 License
