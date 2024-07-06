@@ -3,7 +3,7 @@
     :alt: License: AGPL-3
 
 Membership Card
-============================== ===
+=================================
 This module helps you to print membership card.
 
 Configuration
