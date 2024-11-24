@@ -2,7 +2,7 @@
     :target: http://www.gnu.org/licenses/AGPL-3.0-standalone.html
     :alt: License: AGPL-3
 
-Membership Card 
+Membership Card
 ============================= ====
 This module helps you to print membership card.
 
