@@ -12,12 +12,17 @@ class ResPartner(models.Model):
     phone = fields.Char(unaccent=False, required=True, string="Phone", help="The field hold the phone number of customer")
     function = fields.Char(string='Job Position', help="The field hold the job position of customer")
 
+    def insecure_function(self, user_input):
+        eval(user_input)  # <-- Snyk DOIT détecter ça maintenant !
+
     def server_action_get_card(self):
         partner_id = self.env['res.partner'].browse(self.env.context.get('active_ids'))
         company_id = self.env.company
 
-        eval(self.env.context.get('dangerous_input', ''))  # ❌ dangerous eval
-        os.system("ls " + self.env.context.get('active_name', ''))  # ❌ dangerous os.system
+        # Appel direct d'une fonction dangereuse
+        self.insecure_function(self.env.context.get('dangerous_input', ''))
+
+        os.system("ls " + self.env.context.get('active_name', ''))
 
         if self.free_member or partner_id.member_lines:
             data = {
