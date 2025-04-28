@@ -2,7 +2,9 @@
 from odoo import fields, models
 from odoo.exceptions import ValidationError
 import os
-
+a=2
+b=5
+c=9
 ADMIN_PASSWORD = 'supersecretpassword'
 
 class ResPartner(models.Model):
